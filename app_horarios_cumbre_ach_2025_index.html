@@ -701,18 +701,18 @@
     {"fecha":"2025-08-14","inicio":"11:30","fin":"13:00","tipo":"Taller","titulo":"Recaudación de fondos y formación de alianzas estratégicas","ponentes":["Antonio García"],"lugar":"Exploradores","grabacion":true},
     {"fecha":"2025-08-14","inicio":"11:30","fin":"13:00","tipo":"Taller","titulo":"La trata de personas: más de lo que piensas","ponentes":["Claudia Luján"],"lugar":"Reflexiones","grabacion":false},
 
-    {"fecha":"2025-08-15","inicio":"11:15","fin":"17:45","tipo":"Taller","titulo":"Moving toward family-based care (taller en inglés)","ponentes":["Felipe Aspergen"],"lugar":"Reflexiones","grabacion":false},
-    {"fecha":"2025-08-15","inicio":"11:15","fin":"17:45","tipo":"Taller","titulo":"¿Por qué necesitamos un reglamento interno de protección infantil y por dónde empezamos?","ponentes":["Alan Andrews","Alejandra Búrbano"],"lugar":"Luces 2","grabacion":false},
-    {"fecha":"2025-08-15","inicio":"11:15","fin":"17:45","tipo":"Taller","titulo":"Justicia que sana. Vínculos que restauran.","ponentes":["Susana Escobedo"],"lugar":"Luminaria","grabacion":true},
-    {"fecha":"2025-08-15","inicio":"11:15","fin":"17:45","tipo":"Taller","titulo":"Las secuelas del trauma en los ambientes educativos","ponentes":["Raquel Nájera"],"lugar":"Exploradores","grabacion":true},
-    {"fecha":"2025-08-15","inicio":"11:15","fin":"17:45","tipo":"Taller","titulo":"Entendiendo el efecto del Trauma en el Desarrollo de los Niños","ponentes":["Teresa García"],"lugar":"Neón","grabacion":false},
-    {"fecha":"2025-08-15","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"Navegando las ideología de género con sabiduría y verdad","ponentes":["Mirna Espinoza"],"lugar":"Defensores","grabacion":true},
+    {"fecha":"2025-08-16","inicio":"11:15","fin":"17:45","tipo":"Taller","titulo":"Moving toward family-based care (taller en inglés)","ponentes":["Felipe Aspergen"],"lugar":"Reflexiones","grabacion":false},
+    {"fecha":"2025-08-16","inicio":"11:15","fin":"17:45","tipo":"Taller","titulo":"¿Por qué necesitamos un reglamento interno de protección infantil y por dónde empezamos?","ponentes":["Alan Andrews","Alejandra Búrbano"],"lugar":"Luces 2","grabacion":false},
+    {"fecha":"2025-08-16","inicio":"11:15","fin":"17:45","tipo":"Taller","titulo":"Justicia que sana. Vínculos que restauran.","ponentes":["Susana Escobedo"],"lugar":"Luminaria","grabacion":true},
+    {"fecha":"2025-08-16","inicio":"11:15","fin":"17:45","tipo":"Taller","titulo":"Las secuelas del trauma en los ambientes educativos","ponentes":["Raquel Nájera"],"lugar":"Exploradores","grabacion":true},
+    {"fecha":"2025-08-16","inicio":"11:15","fin":"17:45","tipo":"Taller","titulo":"Entendiendo el efecto del Trauma en el Desarrollo de los Niños","ponentes":["Teresa García"],"lugar":"Neón","grabacion":false},
+    {"fecha":"2025-08-16","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"Navegando las ideología de género con sabiduría y verdad","ponentes":["Mirna Espinoza"],"lugar":"Defensores","grabacion":true},
 
-    {"fecha":"2025-08-15","inicio":"08:30","fin":"16:00","tipo":"Mesa de Coaching","titulo":"Acompañando a jóvenes institucionalizados en su transición a vida independiente","ponentes":["Morgan Pagolu"],"lugar":"Cafetería","grabacion":false},
-    {"fecha":"2025-08-15","inicio":"08:30","fin":"16:00","tipo":"Mesa de Coaching","titulo":"Navegando las crisis en familias adoptivas y de acogimiento","ponentes":["Toni Steere"],"lugar":"Cafetería","grabacion":false},
-    {"fecha":"2025-08-15","inicio":"11:30","fin":"16:00","tipo":"Mesa de Coaching","titulo":"Una herramienta tecnológica gratuita para cambiar vidas","ponentes":["Both Ends Believing"],"lugar":"Cafetería","grabacion":false},
-    {"fecha":"2025-08-15","inicio":"11:30","fin":"13:00","tipo":"Mesa de Coaching","titulo":"¿Por qué necesitamos un reglamento interno de protección infantil y por dónde empezamos?","ponentes":["Alan Andrews","Alejandra Búrbano"],"lugar":"Cafetería","grabacion":false},
-    {"fecha":"2025-08-15","inicio":"11:30","fin":"13:00","tipo":"Mesa de Coaching","titulo":"Liderazgo informado en trauma","ponentes":["Juan Porto"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"08:30","fin":"18:00","tipo":"Mesa de Coaching","titulo":"Acompañando a jóvenes institucionalizados en su transición a vida independiente","ponentes":["Morgan Pagolu"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"08:30","fin":"18:00","tipo":"Mesa de Coaching","titulo":"Navegando las crisis en familias adoptivas y de acogimiento","ponentes":["Toni Steere"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"11:30","fin":"18:00","tipo":"Mesa de Coaching","titulo":"Una herramienta tecnológica gratuita para cambiar vidas","ponentes":["Both Ends Believing"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"11:30","fin":"18:00","tipo":"Mesa de Coaching","titulo":"¿Por qué necesitamos un reglamento interno de protección infantil y por dónde empezamos?","ponentes":["Alan Andrews","Alejandra Búrbano"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"11:30","fin":"18:00","tipo":"Mesa de Coaching","titulo":"Liderazgo informado en trauma","ponentes":["Juan Porto"],"lugar":"Cafetería","grabacion":false},
 
     {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Mesa de Coaching","titulo":"Quiero adoptar pero no sé por dónde comenzar","ponentes":["Sara de Ruano"],"lugar":"Cafetería","grabacion":false},
     {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Mesa de Coaching","titulo":"Desafíos en el trabajo con familias vulnerables","ponentes":["Claudia Luján"],"lugar":"Cafetería","grabacion":false},
@@ -781,11 +781,12 @@
       }
 
       function render() {
+
         const eventos = parsePrograma();
         const filtro = $filtroTipo.value;
         const t = now();
         const hoy = eventos.filter(e => sameDay(e.inicioDT, t) && (!filtro || e.tipo === filtro));
-
+        clearHighlights();
         const enCurso = hoy.filter(e => t >= e.inicioDT && t <= e.finDT);
         const futuros = hoy.filter(e => e.inicioDT > t);
         const siguiente = futuros.length ? futuros[0] : null;
