@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cumbre ACH 2025 · Programa</title>
+  <style>
+    :root{
+      --bg:#0f172a;          /* azul noche */
+      --card:#0b1226;        /* más oscuro */
+      --accent:#f97316;      /* naranja línea gráfica */
+      --accent-2:#22d3ee;    /* cian de apoyo */
+      --text:#e5e7eb;        /* gris muy claro */
+      --muted:#94a3b8;       /* gris */
+      --ok:#22c55e;          /* verde */
+      --warn:#fbbf24;        /* amarillo */
+      --err:#ef4444;         /* rojo */
+    }
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,#0b1226,#0f172a 30%,#030617);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Arial,sans-serif;}
+    header{padding:24px 16px;text-align:center;border-bottom:1px solid #1f2937;position:sticky;top:0;background:rgba(11,18,38,0.85);backdrop-filter:blur(10px);z-index:10}
+    header h1{margin:0;font-size:clamp(20px,3.2vw,34px);letter-spacing:.5px}
+    header p{margin:6px 0 0;color:var(--muted)}
+    main{max-width:1100px;margin:0 auto;padding:20px;display:grid;gap:16px;grid-template-columns:1.2fr .8fr}
+    @media (max-width: 980px){main{grid-template-columns:1fr}}
+
+    .card{background:radial-gradient(1200px 600px at -30% -80%,rgba(249,115,22,.08),transparent),linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.06);border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.25);}
+    .card h2{margin:0 0 12px;padding:16px 18px;border-bottom:1px solid rgba(255,255,255,.06);font-size:18px;color:#fff}
+    .body{padding:16px 18px}
+
+    .pill{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.15);border-radius:999px;padding:6px 10px;color:var(--text);font-size:12px}
+    .pill.small{font-size:11px;padding:4px 8px}
+
+    .now{background:rgba(34,197,94,.08);border-color:rgba(34,197,94,.4)}
+    .next{background:rgba(34,211,238,.08);border-color:rgba(34,211,238,.4)}
+
+    .events{display:grid;gap:10px}
+    .event{display:grid;gap:8px;padding:12px;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.08)}
+    .event .title{font-weight:700}
+    .meta{display:flex;flex-wrap:wrap;gap:8px;color:var(--muted)}
+
+    .legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .legend .key{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)}
+    .legend .dot{width:10px;height:10px;border-radius:3px;border:1px solid rgba(255,255,255,.8)}
+
+    .map-wrap{position:relative;aspect-ratio:4/3;border-top-left-radius:18px;border-top-right-radius:18px;overflow:hidden}
+    .map-hdr{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 14px;border-top-left-radius:18px;border-top-right-radius:18px;background:linear-gradient(90deg,rgba(249,115,22,.15),rgba(34,211,238,.12));border-bottom:1px solid rgba(255,255,255,.06)}
+
+    svg{display:block;width:100%;height:100%;background:radial-gradient(900px 500px at 0% -20%,rgba(34,211,238,.06),transparent),radial-gradient(900px 500px at 130% 120%,rgba(249,115,22,.05),transparent)}
+    .room{fill:#0a1224;stroke:#6b7280;stroke-width:1.2}
+    .roomLabel{font-size:12px;fill:#cbd5e1}
+    .highlight{filter:url(#glow);stroke:var(--accent);stroke-width:2.2;fill:#121e3a}
+
+    .time{font-family:ui-monospace,Menlo,Consolas,monospace;color:#fff}
+    .muted{color:var(--muted)}
+    .footer{padding:12px 16px;color:var(--muted);font-size:12px;text-align:center}
+    .btn{cursor:pointer;border:1px solid rgba(255,255,255,.2);background:transparent;color:#fff;border-radius:10px;padding:6px 10px}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Cumbre ACH 2025 · Programa en vivo</h1>
+  <label for="filtroTipo">Filtrar por tipo:</label>
+  <select id="filtroTipo">
+    <option value="">Todos</option>
+    <option value="Taller">Taller</option>
+    <option value="Mesa de Coaching">Mesa de Coaching</option>
+  </select>
+  <p class="muted">Se actualiza cada 30s · Zona horaria: América/Guatemala</p>
+</header>
+<main>
+  <section class="card" aria-labelledby="actual">
+    <h2 id="actual">Ahora mismo</h2>
+    <div class="body">
+      <div id="lista-actual" class="events"></div>
+      <div class="legend">
+        <span class="key"><span class="dot" style="background:#121e3a;border-color:#22c55e"></span> Salas resaltadas en el mapa</span>
+        <span class="key"><span class="dot" style="background:#0a1224"></span> Otras salas</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" aria-labelledby="prox">
+    <h2 id="prox">Próximo evento</h2>
+    <div class="body">
+      <div id="proximo" class="events"></div>
+    </div>
+  </section>
+
+  <section class="card" style="grid-column:1 / -1">
+    <div class="map-hdr">
+      <div>
+        <strong>Mapa del Centro de Convenciones</strong>
+        <div class="muted" style="font-size:12px">Haz clic en un evento para centrar su sala</div>
+      </div>
+      <button class="btn" id="btn-reset">Quitar resaltado</button>
+    </div>
+    <div class="map-wrap">
+      <!-- Croquis simplificado en SVG (ids de salas coinciden con los nombres en los eventos) -->
+      <svg id="croquis" viewBox="0 0 850 700" aria-label="Croquis ACH">
+        <defs>
+          <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#f97316" flood-opacity=".75"/>
+          </filter>
+        </defs>
+
+        <!-- Bloque izquierdo -->
+        <rect id="Luminaria" class="room" x="70" y="280" width="400" height="220" fill="#081228"/>
+        <text class="roomLabel" x="270" y="400" text-anchor="middle">Luminaria</text>
+
+        <rect id="Lamparas" class="room" x="50" y="450" width="100" height="50"/>
+        <text class="roomLabel" x="100" y="475" text-anchor="middle">Lamparas</text>
+
+        <rect id="Llamas" class="room" x="390" y="450" width="100" height="50"/>
+        <text class="roomLabel" x="440" y="475" text-anchor="middle">Llamas</text>
+
+        <rect id="Lobby" class="room" x="170" y="500" width="200" height="120" fill="#081228"/>
+        <text class="roomLabel" x="270" y="560" text-anchor="middle">Lobby</text>
+
+        <rect id="Reflexiones" class="room" x="20" y="600" width="100" height="70"/>
+        <text class="roomLabel" x="70" y="640" text-anchor="middle">Reflexiones</text>
+
+        <!-- Bloque central -->
+
+        <rect id="Defensores" class="room" x="590" y="130" width="160" height="130" fill="#081228"/>
+        <text class="roomLabel" x="675" y="180" text-anchor="middle">Salón</text>
+        <text class="roomLabel" x="675" y="200" text-anchor="middle">Defensores</text>
+
+        <rect id="Exploradores" class="room" x="590" y="500" width="80" height="70"/>
+        <text class="roomLabel" x="630" y="530" text-anchor="middle">Salón</text>
+        <text class="roomLabel" x="630" y="540" text-anchor="middle">Exploradores</text>
+
+        <rect id="Cafetería" class="room" x="520" y="620" width="150" height="50"/>
+        <text class="roomLabel" x="600" y="650" text-anchor="middle">Cafetería</text>
+
+        <!-- Bloque derecho -->
+
+        <rect id="Neón" class="room" x="690" y="370" width="125" height="300"/>
+        <text class="roomLabel" x="750" y="530" text-anchor="middle">Neón</text>
+
+        <rect id="Luces 5" class="room" x="690" y="280" width="60" height="70"/>
+        <text class="roomLabel" x="720" y="320" text-anchor="middle">Luces 5</text>
+
+        <rect id="Luces 4" class="room" x="760" y="240" width="60" height="70"/>
+        <text class="roomLabel" x="790" y="280" text-anchor="middle">Luces 4</text>
+
+        <rect id="Luces 3" class="room" x="760" y="130" width="60" height="100"/>
+        <text class="roomLabel" x="790" y="185" text-anchor="middle">Luces 3</text>
+
+        <rect id="Luces 2" class="room" x="700" y="20" width="60" height="100"/>
+        <text class="roomLabel" x="730" y="75" text-anchor="middle">Luces 2</text>
+        
+      </svg>
+
+    </div>
+    <div class="footer">Croquis referencial. Los nombres deben coincidir con los "lugar" del programa.</div>
+  </section>
+</main>
+
+<!-- Programa integrado (JSON) -->
+<script id="programa" type="application/json">
+{
+  "eventos": [
+    {"fecha":"2025-08-20","inicio":"09:30","fin":"11:00","tipo":"Conexión","titulo":"Evento Pre-Cumbre - Registro e ingreso","ponentes":[],"lugar":"Neón","grabacion":false},
+
+    {"fecha":"2025-08-15","inicio":"08:30","fin":"13:00","tipo":"Taller","titulo":"Protegiendo a la familia atendiendo a mujeres sobrevivientes de violencia","ponentes":["Lesbia González"],"lugar":"Neón","grabacion":true},
+    {"fecha":"2025-08-15","inicio":"08:30","fin":"13:00","tipo":"Taller","titulo":"El Arte de Amar a los Adolescentes con Límites y Comprensión","ponentes":["Sara de Ruano"],"lugar":"Exploradores","grabacion":true},
+    {"fecha":"2025-08-15","inicio":"08:30","fin":"13:00","tipo":"Taller","titulo":"¿Cómo comenzar un ministerio de cuidado al vulnerable desde mi iglesia?","ponentes":["Jose Salazar"],"lugar":"Reflexiones","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"11:30","fin":"13:00","tipo":"Taller","titulo":"Entendiendo el efecto del Trauma en el Desarrollo de los Niños","ponentes":["Teresa García"],"lugar":"Neón","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"11:30","fin":"13:00","tipo":"Taller","titulo":"Esperanza para Jóvenes en Transición: Programas de Mentoría basados en acompañamiento y relaciones","ponentes":["Kim y Jonnie Welford"],"lugar":"Luces 2","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"11:30","fin":"13:00","tipo":"Taller","titulo":"Podcast Religión Pura en vivo: Preguntas y respuestas sobre la crianza","ponentes":["David McCormick","Aixa de López"],"lugar":"Luminaria","grabacion":true},
+
+    {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"Herramientas prácticas para conectar a través del juego","ponentes":["Sonia Sánchez"],"lugar":"Exploradores","grabacion":true},
+    {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"La relación entre la nutrición y la sanidad del trauma","ponentes":["Jenny Euraque"],"lugar":"Defensores","grabacion":true},
+    {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"Cambiando historias: El impacto transformador del acogimiento familiar.","ponentes":["Marce Torres","Hazel Cedeño"],"lugar":"Neón","grabacion":false},
+    {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"Panel Interactivo: Cómo podemos servir a personas con discapacidad","ponentes":["Paola de Alvarado","Azaria de Pocasangre","Shelly Reeves","Vanessa Montoya"],"lugar":"Reflexiones","grabacion":false},
+    {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"Devocionales para el cuidador agotado","ponentes":["Jeanine Martínez"],"lugar":"Luminaria","grabacion":true},
+    {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"Amando a las comunidades más vulnerables desde la iglesia local","ponentes":["World Orphans"],"lugar":"Luces 2","grabacion":false},
+
+    {"fecha":"2025-08-14","inicio":"11:30","fin":"13:00","tipo":"Taller","titulo":"El poder de La oración en el cuidado del huérfano","ponentes":["Toni Steere"],"lugar":"Defensores","grabacion":true},
+    {"fecha":"2025-08-14","inicio":"11:30","fin":"13:00","tipo":"Taller","titulo":"Pausa y Piensa: Diciendo la Verdad en la Adopción","ponentes":["Jackie Darby","Yesenia","Camila","Mónica"],"lugar":"Neón","grabacion":false},
+    {"fecha":"2025-08-14","inicio":"11:30","fin":"13:00","tipo":"Taller","titulo":"Cuestión de Decisión: Los para qué y los cómo de la reunificación y reintegración familiar.","ponentes":["Andrés Villalobos"],"lugar":"Luces 2","grabacion":false},
+    {"fecha":"2025-08-14","inicio":"11:30","fin":"13:00","tipo":"Taller","titulo":"La Otra Cara del Dolor: Historias difíciles y redención completa","ponentes":["Maya Alonzo"],"lugar":"Luminaria","grabacion":true},
+    {"fecha":"2025-08-14","inicio":"11:30","fin":"13:00","tipo":"Taller","titulo":"Recaudación de fondos y formación de alianzas estratégicas","ponentes":["Antonio García"],"lugar":"Exploradores","grabacion":true},
+    {"fecha":"2025-08-14","inicio":"11:30","fin":"13:00","tipo":"Taller","titulo":"La trata de personas: más de lo que piensas","ponentes":["Claudia Luján"],"lugar":"Reflexiones","grabacion":false},
+
+    {"fecha":"2025-08-15","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"Moving toward family-based care (taller en inglés)","ponentes":["Felipe Aspergen"],"lugar":"Reflexiones","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"¿Por qué necesitamos un reglamento interno de protección infantil y por dónde empezamos?","ponentes":["Alan Andrews","Alejandra Búrbano"],"lugar":"Luces 2","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"Justicia que sana. Vínculos que restauran.","ponentes":["Susana Escobedo"],"lugar":"Luminaria","grabacion":true},
+    {"fecha":"2025-08-15","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"Las secuelas del trauma en los ambientes educativos","ponentes":["Raquel Nájera"],"lugar":"Exploradores","grabacion":true},
+    {"fecha":"2025-08-15","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"Entendiendo el efecto del Trauma en el Desarrollo de los Niños","ponentes":["Teresa García"],"lugar":"Neón","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"Navegando las ideología de género con sabiduría y verdad","ponentes":["Mirna Espinoza"],"lugar":"Defensores","grabacion":true},
+
+    {"fecha":"2025-08-15","inicio":"08:30","fin":"13:00","tipo":"Mesa de Coaching","titulo":"Acompañando a jóvenes institucionalizados en su transición a vida independiente","ponentes":["Morgan Pagolu"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"08:30","fin":"13:00","tipo":"Mesa de Coaching","titulo":"Navegando las crisis en familias adoptivas y de acogimiento","ponentes":["Toni Steere"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"11:30","fin":"13:00","tipo":"Mesa de Coaching","titulo":"Una herramienta tecnológica gratuita para cambiar vidas","ponentes":["Both Ends Believing"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"11:30","fin":"13:00","tipo":"Mesa de Coaching","titulo":"¿Por qué necesitamos un reglamento interno de protección infantil y por dónde empezamos?","ponentes":["Alan Andrews","Alejandra Búrbano"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"11:30","fin":"13:00","tipo":"Mesa de Coaching","titulo":"Liderazgo informado en trauma","ponentes":["Juan Porto"],"lugar":"Cafetería","grabacion":false},
+
+    {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Mesa de Coaching","titulo":"Quiero adoptar pero no sé por dónde comenzar","ponentes":["Sara de Ruano"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Mesa de Coaching","titulo":"Desafíos en el trabajo con familias vulnerables","ponentes":["Claudia Luján"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Mesa de Coaching","titulo":"Fortalecimiento comunitario","ponentes":["Claudia Marroquín"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Mesa de Coaching","titulo":"Justicia que sana. Vínculos que restauran.","ponentes":["Rosalva Alvarado"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Mesa de Coaching","titulo":"Exploring the movement towards family based care","ponentes":["Felipe Aspergen"],"lugar":"Cafetería","grabacion":false},
+
+    {"fecha":"2025-08-22","inicio":"11:30","fin":"13:00","tipo":"Mesa de Coaching","titulo":"Acompañando a jóvenes institucionalizados en su transición a vida independiente","ponentes":["Morgan Pagolu"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-22","inicio":"11:30","fin":"13:00","tipo":"Mesa de Coaching","titulo":"Cuidado pastoral para líderes cansados","ponentes":["Claudio Fuentes"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-22","inicio":"11:30","fin":"13:00","tipo":"Mesa de Coaching","titulo":"Una herramienta tecnológica gratuita para cambiar vidas","ponentes":["Both Ends Believing"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-22","inicio":"11:30","fin":"13:00","tipo":"Mesa de Coaching","titulo":"¿Por qué necesitamos un reglamento interno de protección infantil y por dónde empezamos?","ponentes":["Alan Andrews","Alejandra Búrbano"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-22","inicio":"11:30","fin":"13:00","tipo":"Mesa de Coaching","titulo":"Cross-Cultural Partnerships: Facilitating Gospel-Centered Local","ponentes":["Jonnie Welford"],"lugar":"Cafetería","grabacion":false},
+
+    {"fecha":"2025-08-22","inicio":"16:15","fin":"17:45","tipo":"Mesa de Coaching","titulo":"Quiero ser mentor pero no sé por dónde comenzar","ponentes":["Azaria de Pocasangre"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-22","inicio":"16:15","fin":"17:45","tipo":"Mesa de Coaching","titulo":"Desafíos y soluciones en la formación de alianzas y recaudación de fondos desde ONGs","ponentes":["Antonio García"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-22","inicio":"16:15","fin":"17:45","tipo":"Mesa de Coaching","titulo":"Caminando en la verdad como familias adoptivas","ponentes":["Jackie Darby"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-22","inicio":"16:15","fin":"17:45","tipo":"Mesa de Coaching","titulo":"Justicia que sana. Vínculos que restauran.","ponentes":["Rosalva Alvarado"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-22","inicio":"16:15","fin":"17:45","tipo":"Mesa de Coaching","titulo":"Devocionales para el cuidador agotado","ponentes":["Jeanine Martínez"],"lugar":"Cafetería","grabacion":false}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  const TZ = 'America/Guatemala';
+  const $actual = document.getElementById('lista-actual');
+  const $proximo = document.getElementById('proximo');
+  const $svg = document.getElementById('croquis');
+  const $filtroTipo = document.getElementById('filtroTipo');
+  const $reset = document.getElementById('btn-reset');
+
+  function parsePrograma(){
+    const raw = document.getElementById('programa').textContent.trim();
+    const data = JSON.parse(raw);
+    return data.eventos.map(e=>({
+      ...e,
+      inicioDT: new Date(`${e.fecha}T${e.inicio}:00`),
+      finDT: new Date(`${e.fecha}T${e.fin}:00`)
+    })).sort((a,b)=> a.inicioDT - b.inicioDT);
+  }
+
+  function now(){
+    // fecha/hora actual del navegador (se asume misma zona). Para forzar TZ se podría usar Intl + offset.
+    return new Date();
+  }
+
+  function fmtHora(d){
+    try{
+      return new Intl.DateTimeFormat('es-GT',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:TZ}).format(d);
+    }catch{ return d.toTimeString().slice(0,5); }
+  }
+
+  function sameDay(a,b){return a.getFullYear()===b.getFullYear() && a.getMonth()===b.getMonth() && a.getDate()===b.getDate();}
+
+  function clearHighlights(){
+    $svg.querySelectorAll('.room').forEach(r=>r.classList.remove('highlight'));
+  }
+
+  function highlightRooms(lugares){
+    clearHighlights();
+    lugares.forEach(name=>{
+      const el = $svg.querySelector(`#${CSS.escape(name)}`);
+      if(el) el.classList.add('highlight');
+    });
+  }
+
+  function render(){
+    const eventos = parsePrograma();
+    const filtro = $filtroTipo.value;
+    const t = now();
+    const hoy = eventos.filter(e=> sameDay(e.inicioDT,t) && (!filtro || e.tipo === filtro));
+
+    const enCurso = hoy.filter(e=> t>=e.inicioDT && t<=e.finDT);
+    const futuros = hoy.filter(e=> e.inicioDT>t);
+    const siguiente = futuros.length? futuros[0] : null;
+
+    // Render actuales (pueden ser varios)
+    $actual.innerHTML = enCurso.length ? '' : '<div class="muted">No hay evento en curso en este momento.</div>';
+    enCurso.forEach(ev=>{
+      const n = document.createElement('div');
+      n.className = 'event';
+      n.innerHTML = `
+        <div class="meta">
+          <span class="pill now">${ev.tipo}</span>
+          <span class="pill time">${fmtHora(ev.inicioDT)}–${fmtHora(ev.finDT)}</span>
+          ${ev.grabacion? '<span class="pill small">Grabación</span>':''}
+        </div>
+        <div class="title">${ev.titulo}</div>
+        <div class="meta">${ev.ponentes.join(', ') || '<span class="muted">Por confirmar</span>'}</div>
+        <div class="meta">Lugar: <strong style="color:#fff;margin-left:6px">${ev.lugar}</strong></div>
+      `;
+      n.addEventListener('click',()=> highlightRooms([ev.lugar]));
+      $actual.appendChild(n);
+    });
+
+    // Resaltar salas de eventos en curso
+    if(enCurso.length){ highlightRooms([...new Set(enCurso.map(e=>e.lugar))]); }
+
+    // Render siguiente
+    $proximo.innerHTML = '';
+    if(siguiente){
+      const d = document.createElement('div');
+      d.className = 'event';
+      d.innerHTML = `
+        <div class="meta">
+          <span class="pill next">${siguiente.tipo}</span>
+          <span class="pill time">${fmtHora(siguiente.inicioDT)}–${fmtHora(siguiente.finDT)}</span>
+          ${siguiente.grabacion? '<span class="pill small">Grabación</span>':''}
+        </div>
+        <div class="title">${siguiente.titulo}</div>
+        <div class="meta">${siguiente.ponentes.join(', ') || '<span class=\"muted\">Por confirmar</span>'}</div>
+        <div class="meta">Lugar: <strong style="color:#fff;margin-left:6px">${siguiente.lugar}</strong></div>
+      `;
+      d.addEventListener('click',()=> highlightRooms([siguiente.lugar]));
+      $proximo.appendChild(d);
+    } else {
+      $proximo.innerHTML = '<div class="muted">No hay más eventos hoy.</div>';
+    }
+  }
+
+  render();
+  setInterval(render, 30000);
+  $reset.addEventListener('click', clearHighlights);
+  $filtroTipo.addEventListener('change', render);
+})();
+</script>
+</body>
+</html>
