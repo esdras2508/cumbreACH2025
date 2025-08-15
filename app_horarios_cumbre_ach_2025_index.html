@@ -238,6 +238,7 @@
     svg .room {
       vector-effect: non-scaling-stroke;
     }
+
     svg .room.highlight {
       filter: none !important;
       stroke: #f97316 !important;
@@ -252,16 +253,18 @@
   <header>
     <h1>Cumbre ACH 2025</h1>
     <h2>Programa en vivo</h2>
-    <nav>
-    <a href="programa.html" class="btn-pdf">📄 Ver programa en PDF</a>
-  </nav>
+
     <label for="filtroTipo">Filtrar por:</label>
     <select id="filtroTipo">
       <option value="">Todos</option>
       <option value="Taller">Taller</option>
       <option value="Mesa de Coaching">Mesa de Coaching</option>
     </select>
-    <p class="muted">Se actualiza cada minuto automáticamente o puedes refrescar la página. <br> Zona horaria: América/Guatemala GMT-6</p>
+    <p class="muted">Se actualiza cada minuto automáticamente o puedes refrescar la página. <br> Zona horaria:
+      América/Guatemala GMT-6</p>
+    <nav>
+      <a href="programa.html" class="btn-pdf">📄 Ver programa completo</a>
+    </nav>
   </header>
   <main>
     <section class="card" aria-labelledby="actual">
@@ -293,7 +296,8 @@
       </div>
       <div class="map-wrap">
         <!-- Croquis simplificado en SVG (ids de salas coinciden con los nombres en los eventos) -->
-        <svg id="croquis" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 363.83 284.43" aria-label="Croquis ACH">
+        <svg id="croquis" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 363.83 284.43"
+          aria-label="Croquis ACH">
           <defs>
             <style>
               .cls-1 {
@@ -325,10 +329,14 @@
               }
             </style>
           </defs>
-          <polygon id="Luces 5" class="cls-4 room" points="285 125.74 290.8 135.94 310.19 135.94 317.19 129.34 299.2 111.35 285 125.74" />
-          <polygon id="Luces 4" class="cls-6 room" points="299.2 111.35 317.19 129.34 334.59 112.34 309.8 100.15 299.2 111.35" />
-          <polygon id="Luces 3" class="cls-4 room" points="309.8 100.15 309.8 65.36 334.59 54.96 334.59 112.34 309.8 100.15" />
-          <polygon id="Luces 2" class="cls-6 room" points="309.8 65.36 285 40.76 296.2 16.57 334.59 54.96 309.8 65.36" />
+          <polygon id="Luces 5" class="cls-4 room"
+            points="285 125.74 290.8 135.94 310.19 135.94 317.19 129.34 299.2 111.35 285 125.74" />
+          <polygon id="Luces 4" class="cls-6 room"
+            points="299.2 111.35 317.19 129.34 334.59 112.34 309.8 100.15 299.2 111.35" />
+          <polygon id="Luces 3" class="cls-4 room"
+            points="309.8 100.15 309.8 65.36 334.59 54.96 334.59 112.34 309.8 100.15" />
+          <polygon id="Luces 2" class="cls-6 room"
+            points="309.8 65.36 285 40.76 296.2 16.57 334.59 54.96 309.8 65.36" />
           <polygon class="cls-4" points="253.81 40.96 285 40.76 296.2 16.57 253.81 16.57 253.81 40.96" />
           <g>
             <rect class="cls-2" x="287.95" y="124.67" width="22.49" height="4.8" />
@@ -422,7 +430,7 @@
           </g>
           <polygon id="Lamparas" class="cls-4 room"
             points="49.2 178.18 61.53 165.26 74.69 177.82 85.08 187.34 85.08 204.82 76.33 204.82 62.17 190.56 49.2 178.18" />
-          <polygon  id="Llamas" class="cls-4"
+          <polygon id="Llamas" class="cls-4"
             points="219.16 178.18 206.83 165.26 193.66 177.82 183.27 187.34 183.27 204.82 192.03 204.82 206.18 190.56 219.16 178.18" />
           <path id="Luminaria" class="cls-6 room"
             d="M130.82,187.34h52.83l23.26-22.08-.39-50.86-43.77-17.35s-7.62,14.16-27.59,14.16-30.17-13.93-30.17-13.93l.6-.24-43.77,17.35-.39,50.86,23.26,22.08h52.83" />
@@ -540,7 +548,8 @@
             </g>
           </g>
           <g>
-            <polygon id="Exploradores" class="cls-6 room" points="239.61 186.82 278.6 186.82 278.1 228.31 239.61 228.31 239.61 186.82" />
+            <polygon id="Exploradores" class="cls-6 room"
+              points="239.61 186.82 278.6 186.82 278.1 228.31 239.61 228.31 239.61 186.82" />
             <g>
               <rect class="cls-2" x="241.61" y="202.92" width="34.99" height="10.29" />
               <path class="cls-5"
@@ -683,12 +692,12 @@
   "eventos": [
     {"fecha":"2025-08-20","inicio":"09:30","fin":"11:00","tipo":"Conexión","titulo":"Evento Pre-Cumbre - Registro e ingreso","ponentes":[],"lugar":"Neón","grabacion":false},
 
-    {"fecha":"2025-08-15","inicio":"08:30","fin":"18:00","tipo":"Taller","titulo":"Protegiendo a la familia atendiendo a mujeres sobrevivientes de violencia","ponentes":["Lesbia González"],"lugar":"Neón","grabacion":true},
-    {"fecha":"2025-08-15","inicio":"08:30","fin":"18:00","tipo":"Taller","titulo":"El Arte de Amar a los Adolescentes con Límites y Comprensión","ponentes":["Sara de Ruano"],"lugar":"Exploradores","grabacion":true},
-    {"fecha":"2025-08-15","inicio":"08:30","fin":"18:00","tipo":"Taller","titulo":"¿Cómo comenzar un ministerio de cuidado al vulnerable desde mi iglesia?","ponentes":["Jose Salazar"],"lugar":"Reflexiones","grabacion":false},
-    {"fecha":"2025-08-15","inicio":"11:30","fin":"18:00","tipo":"Taller","titulo":"Entendiendo el efecto del Trauma en el Desarrollo de los Niños","ponentes":["Teresa García"],"lugar":"Neón","grabacion":false},
-    {"fecha":"2025-08-15","inicio":"11:30","fin":"18:00","tipo":"Taller","titulo":"Esperanza para Jóvenes en Transición: Programas de Mentoría basados en acompañamiento y relaciones","ponentes":["Kim y Jonnie Welford"],"lugar":"Luces 2","grabacion":false},
-    {"fecha":"2025-08-15","inicio":"11:30","fin":"18:00","tipo":"Taller","titulo":"Podcast Religión Pura en vivo: Preguntas y respuestas sobre la crianza","ponentes":["David McCormick","Aixa de López"],"lugar":"Luminaria","grabacion":true},
+    {"fecha":"2025-08-15","inicio":"19:30","fin":"23:55","tipo":"Taller","titulo":"Protegiendo a la familia atendiendo a mujeres sobrevivientes de violencia","ponentes":["Lesbia González"],"lugar":"Neón","grabacion":true},
+    {"fecha":"2025-08-15","inicio":"19:30","fin":"23:55","tipo":"Taller","titulo":"El Arte de Amar a los Adolescentes con Límites y Comprensión","ponentes":["Sara de Ruano"],"lugar":"Exploradores","grabacion":true},
+    {"fecha":"2025-08-15","inicio":"19:30","fin":"23:55","tipo":"Taller","titulo":"¿Cómo comenzar un ministerio de cuidado al vulnerable desde mi iglesia?","ponentes":["Jose Salazar"],"lugar":"Reflexiones","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"16:30","fin":"19:30","tipo":"Taller","titulo":"Entendiendo el efecto del Trauma en el Desarrollo de los Niños","ponentes":["Teresa García"],"lugar":"Neón","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"16:30","fin":"19:30","tipo":"Taller","titulo":"Esperanza para Jóvenes en Transición: Programas de Mentoría basados en acompañamiento y relaciones","ponentes":["Kim y Jonnie Welford"],"lugar":"Luces 2","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"16:30","fin":"19:30","tipo":"Taller","titulo":"Podcast Religión Pura en vivo: Preguntas y respuestas sobre la crianza","ponentes":["David McCormick","Aixa de López"],"lugar":"Luminaria","grabacion":true},
 
     {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"Herramientas prácticas para conectar a través del juego","ponentes":["Sonia Sánchez"],"lugar":"Exploradores","grabacion":true},
     {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"La relación entre la nutrición y la sanidad del trauma","ponentes":["Jenny Euraque"],"lugar":"Defensores","grabacion":true},
@@ -711,11 +720,11 @@
     {"fecha":"2025-08-16","inicio":"11:15","fin":"17:45","tipo":"Taller","titulo":"Entendiendo el efecto del Trauma en el Desarrollo de los Niños","ponentes":["Teresa García"],"lugar":"Neón","grabacion":false},
     {"fecha":"2025-08-16","inicio":"16:15","fin":"17:45","tipo":"Taller","titulo":"Navegando las ideología de género con sabiduría y verdad","ponentes":["Mirna Espinoza"],"lugar":"Defensores","grabacion":true},
 
-    {"fecha":"2025-08-15","inicio":"08:30","fin":"18:00","tipo":"Mesa de Coaching","titulo":"Acompañando a jóvenes institucionalizados en su transición a vida independiente","ponentes":["Morgan Pagolu"],"lugar":"Cafetería","grabacion":false},
-    {"fecha":"2025-08-15","inicio":"08:30","fin":"18:00","tipo":"Mesa de Coaching","titulo":"Navegando las crisis en familias adoptivas y de acogimiento","ponentes":["Toni Steere"],"lugar":"Cafetería","grabacion":false},
-    {"fecha":"2025-08-15","inicio":"11:30","fin":"18:00","tipo":"Mesa de Coaching","titulo":"Una herramienta tecnológica gratuita para cambiar vidas","ponentes":["Both Ends Believing"],"lugar":"Cafetería","grabacion":false},
-    {"fecha":"2025-08-15","inicio":"11:30","fin":"18:00","tipo":"Mesa de Coaching","titulo":"¿Por qué necesitamos un reglamento interno de protección infantil y por dónde empezamos?","ponentes":["Alan Andrews","Alejandra Búrbano"],"lugar":"Cafetería","grabacion":false},
-    {"fecha":"2025-08-15","inicio":"11:30","fin":"18:00","tipo":"Mesa de Coaching","titulo":"Liderazgo informado en trauma","ponentes":["Juan Porto"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"19:30","fin":"23:55","tipo":"Mesa de Coaching","titulo":"Acompañando a jóvenes institucionalizados en su transición a vida independiente","ponentes":["Morgan Pagolu"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"19:30","fin":"23:55","tipo":"Mesa de Coaching","titulo":"Navegando las crisis en familias adoptivas y de acogimiento","ponentes":["Toni Steere"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"19:30","fin":"23:55","tipo":"Mesa de Coaching","titulo":"Una herramienta tecnológica gratuita para cambiar vidas","ponentes":["Both Ends Believing"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"16:30","fin":"21:00","tipo":"Mesa de Coaching","titulo":"¿Por qué necesitamos un reglamento interno de protección infantil y por dónde empezamos?","ponentes":["Alan Andrews","Alejandra Búrbano"],"lugar":"Cafetería","grabacion":false},
+    {"fecha":"2025-08-15","inicio":"16:30","fin":"21:00","tipo":"Mesa de Coaching","titulo":"Liderazgo informado en trauma","ponentes":["Juan Porto"],"lugar":"Cafetería","grabacion":false},
 
     {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Mesa de Coaching","titulo":"Quiero adoptar pero no sé por dónde comenzar","ponentes":["Sara de Ruano"],"lugar":"Cafetería","grabacion":false},
     {"fecha":"2025-08-14","inicio":"16:15","fin":"17:45","tipo":"Mesa de Coaching","titulo":"Desafíos en el trabajo con familias vulnerables","ponentes":["Claudia Luján"],"lugar":"Cafetería","grabacion":false},
@@ -771,7 +780,7 @@
       function sameDay(a, b) { return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate(); }
 
       function clearHighlights() {
-        $svg.querySelectorAll('.room').forEach(r=>r.classList.remove('highlight'));
+        $svg.querySelectorAll('.room').forEach(r => r.classList.remove('highlight'));
       }
 
       function highlightRooms(lugares) {
@@ -780,7 +789,7 @@
           const el = $svg.querySelector(`#${CSS.escape(name)}`);
           if (el) el.classList.add('highlight');
         });
-        document.getElementById('map-section').scrollIntoView({behavior: 'smooth'});
+        document.getElementById('map-section').scrollIntoView({ behavior: 'smooth' });
       }
 
       function render() {
@@ -819,20 +828,22 @@
         // Render siguiente
         $proximo.innerHTML = '';
         if (siguiente) {
-          const d = document.createElement('div');
-          d.className = 'event';
-          d.innerHTML = `
+          futuros.forEach(ev => {
+            const d = document.createElement('div');
+            d.className = 'event';
+            d.innerHTML = `
         <div class="meta">
-          <span class="pill next">${siguiente.tipo}</span>
-          <span class="pill time">${fmtHora(siguiente.inicioDT)}–${fmtHora(siguiente.finDT)}</span>
-          ${siguiente.grabacion ? '<span class="pill small">Grabación</span>' : ''}
+          <span class="pill next">${ev.tipo}</span>
+          <span class="pill time">${fmtHora(ev.inicioDT)}–${fmtHora(ev.finDT)}</span>
+          ${ev.grabacion ? '<span class="pill small">Grabación</span>' : ''}
         </div>
-        <div class="title">${siguiente.titulo}</div>
-        <div class="meta">${siguiente.ponentes.join(', ') || '<span class=\"muted\">Por confirmar</span>'}</div>
-        <div class="meta">Lugar: <strong style="color:#fff;margin-left:6px">${siguiente.lugar}</strong></div>
+        <div class="title">${ev.titulo}</div>
+        <div class="meta">${ev.ponentes.join(', ') || '<span class=\"muted\">Por confirmar</span>'}</div>
+        <div class="meta">Lugar: <strong style="color:#fff;margin-left:6px">${ev.lugar}</strong></div>
       `;
-          d.addEventListener('click', () => highlightRooms([siguiente.lugar]));
-          $proximo.appendChild(d);
+            d.addEventListener('click', () => highlightRooms([ev.lugar]));
+            $proximo.appendChild(d);
+          });
         } else {
           $proximo.innerHTML = '<div class="muted">No hay más eventos hoy.</div>';
         }
