@@ -65,7 +65,7 @@
     <option value="Taller">Taller</option>
     <option value="Mesa de Coaching">Mesa de Coaching</option>
   </select>
-  <p class="muted">Se actualiza cada 30s · Zona horaria: América/Guatemala</p>
+  <p class="muted">Se actualiza cada minuto o puedes recargar la pagina de forma manual· Zona horaria: América/Guatemala GMT-6</p>
 </header>
 <main>
   <section class="card" aria-labelledby="actual">
@@ -152,7 +152,7 @@
       </svg>
 
     </div>
-    <div class="footer">Croquis referencial. Los nombres deben coincidir con los "lugar" del programa.</div>
+    <div class="footer">Croquis referencial.</div>
   </section>
 </main>
 
@@ -316,7 +316,7 @@
   }
 
   render();
-  setInterval(render, 30000);
+  setInterval(render, 60000);
   $reset.addEventListener('click', clearHighlights);
   $filtroTipo.addEventListener('change', render);
 })();
