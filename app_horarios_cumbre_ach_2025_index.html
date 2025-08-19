@@ -798,6 +798,7 @@
             d.innerHTML = `
         <div class="meta">
           <span class="pill next">${ev.tipo}</span>
+          <span class="pill next">${ev.fecha}</span>
           <span class="pill time">${fmtHora(ev.inicioDT)}–${fmtHora(ev.finDT)}</span>
           ${ev.grabacion ? '<span class="pill small">Grabación</span>' : ''}
         </div>
