@@ -848,7 +848,7 @@
         // Render siguiente
         $proximo.innerHTML = '';
         if (siguiente) {
-          futuros.forEach(ev => {
+          futuros.slice(0, 5).forEach(ev => {
             const d = document.createElement('div');
             d.className = 'event';
             d.innerHTML = `
