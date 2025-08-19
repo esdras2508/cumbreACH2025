@@ -767,21 +767,21 @@
       }
 
       function parseProgramaDesdeArchivo() {
-  return fetch("eventos_cumbre.json")
-    .then(response => response.json())
-    .then(data => {
-      console.log("objeto json:", data);
-      return data.eventos.map(e => ({
-        ...e,
-        inicioDT: new Date(`${e.fecha}T${e.inicio}:00`),
-        finDT: new Date(`${e.fecha}T${e.fin}:00`)
-      })).sort((a, b) => a.inicioDT - b.inicioDT);
-    })
-    .catch(error => {
-      console.error("Error al cargar el JSON:", error);
-      return [];
-    });
-}
+        return fetch("eventos_cumbre.json")
+          .then(response => response.json())
+          .then(data => {
+            console.log("objeto json:", data);
+            return data.eventos.map(e => ({
+              ...e,
+              inicioDT: new Date(`${e.fecha}T${e.inicio}:00`),
+              finDT: new Date(`${e.fecha}T${e.fin}:00`)
+            })).sort((a, b) => a.inicioDT - b.inicioDT);
+          })
+          .catch(error => {
+            console.error("Error al cargar el JSON:", error);
+            return [];
+          });
+      }
 
       function now() {
         // fecha/hora actual del navegador (se asume misma zona). Para forzar TZ se podría usar Intl + offset.
@@ -811,12 +811,10 @@
 
       function render() {
 
-        const eventos = parseProgramaDesdeArchivo().then(evento =>{
-  // Aquí puedes usar el arreglo de eventos ya procesado
-  console.log("Eventos ordenados:", evento);
-  // Por ejemplo: mostrar el evento actual, próximo, etc.
-});
-        const filtro = $filtroTipo.value;
+        const eventos = parseProgramaDesdeArchivo().then(evento => {
+          // Aquí puedes usar el arreglo de eventos ya procesado
+          console.log("Eventos ordenados:", evento);
+          const filtro = $filtroTipo.value;
         const t = now();
         const hoy = eventos.filter(e => sameDay(e.inicioDT, t) && (!filtro || e.tipo === filtro));
         clearHighlights();
@@ -868,6 +866,8 @@
         } else {
           $proximo.innerHTML = '<div class="muted">No hay más eventos hoy.</div>';
         }
+          // Por ejemplo: mostrar el evento actual, próximo, etc.
+        });
       }
 
       render();
