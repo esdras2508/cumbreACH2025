@@ -816,7 +816,7 @@
           console.log("Eventos ordenados:", evento);
           const filtro = $filtroTipo.value;
         const t = now();
-        const hoy = eventos.filter(e => sameDay(e.inicioDT, t) && (!filtro || e.tipo === filtro));
+        const hoy = evento.filter(e => sameDay(e.inicioDT, t) && (!filtro || e.tipo === filtro));
         clearHighlights();
         const enCurso = hoy.filter(e => t >= e.inicioDT && t <= e.finDT);
         const futuros = hoy.filter(e => e.inicioDT > t);
