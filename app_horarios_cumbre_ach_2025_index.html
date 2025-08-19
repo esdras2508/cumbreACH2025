@@ -757,6 +757,7 @@
           const filtro = $filtroTipo.value;
         const t = now();
         const oneDay = 24 * 60 * 60 * 1000;
+        const tomorrow = new Date(t.getTime() + oneDay);
         const hoy = evento.filter(e => sameDay(e.inicioDT, t) && (!filtro || e.tipo === filtro));
         const next = evento.filter(e => (sameDay(e.inicioDT, t) || sameDay(e.inicioDT, t + oneDay)) && (!filtro || e.tipo === filtro));
         clearHighlights();
