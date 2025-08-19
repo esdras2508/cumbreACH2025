@@ -1,0 +1,1136 @@
+{
+  "eventos": [
+    {
+      "fecha": "2025-08-18",
+      "inicio": "09:00",
+      "fin": "10:00",
+      "tipo": "General",
+      "titulo": "Inscripción",
+      "ponentes": [
+        "Voluntarios"
+      ],
+      "lugar": "Lobby",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "09:30",
+      "fin": "10:00",
+      "tipo": "General",
+      "titulo": "Se abren las puertas al auditorium",
+      "ponentes": [
+        "Voluntarios"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "10:00",
+      "fin": "10:01",
+      "tipo": "General",
+      "titulo": "Bumper de Introducción",
+      "ponentes": [
+        "Mirna Espinoza"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "10:01",
+      "fin": "10:10",
+      "tipo": "General",
+      "titulo": "Bienvenida e interacción con la audiencia",
+      "ponentes": [
+        "David y Aixa"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "10:10",
+      "fin": "10:10",
+      "tipo": "General",
+      "titulo": "Animación de presentación",
+      "ponentes": [
+        "Mirna Espinoza"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "10:10",
+      "fin": "10:40",
+      "tipo": "General",
+      "titulo": "Plenaria 1",
+      "ponentes": [
+        "David Puerto"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "10:40",
+      "fin": "10:45",
+      "tipo": "General",
+      "titulo": "Video de Religión Pura",
+      "ponentes": [
+        "Mirna Espinoza"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "10:45",
+      "fin": "10:45",
+      "tipo": "General",
+      "titulo": "Presentación de segunda plenaria",
+      "ponentes": [
+        "Video corto"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "10:45",
+      "fin": "11:10",
+      "tipo": "General",
+      "titulo": "Plenaria 2",
+      "ponentes": [
+        "Otto Sánchez"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:10",
+      "fin": "11:15",
+      "tipo": "General",
+      "titulo": "Instrucciones para los talleres",
+      "ponentes": [
+        "David y Aixa"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:15",
+      "fin": "11:30",
+      "tipo": "General",
+      "titulo": "Traslado para los talleres",
+      "ponentes": [
+        "Voluntarios"
+      ],
+      "lugar": "-",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "General",
+      "titulo": "Talleres 1",
+      "ponentes": [
+        "Voluntarios"
+      ],
+      "lugar": "-",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "13:00",
+      "fin": "15:00",
+      "tipo": "General",
+      "titulo": "Almuerzo",
+      "ponentes": [
+        "Voluntarios"
+      ],
+      "lugar": "-",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "15:00",
+      "fin": "15:15",
+      "tipo": "General",
+      "titulo": "Alabanza",
+      "ponentes": [
+        "Iglesia Reforma"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "15:15",
+      "fin": "15:16",
+      "tipo": "General",
+      "titulo": "Video de ACH",
+      "ponentes": [
+        "-"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "15:16",
+      "fin": "16:00",
+      "tipo": "General",
+      "titulo": "Panel con Jackie, Yesenia, Camila, Mónica",
+      "ponentes": [
+        "Aixa"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:00",
+      "fin": "16:15",
+      "tipo": "General",
+      "titulo": "Traslado a talleres",
+      "ponentes": [
+        "Equipo de Voluntarios"
+      ],
+      "lugar": "-",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "General",
+      "titulo": "Talleres 2",
+      "ponentes": [
+        "Equipo de Voluntarios"
+      ],
+      "lugar": "-",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "17:45",
+      "fin": "18:00",
+      "tipo": "General",
+      "titulo": "Traslado al salón principal",
+      "ponentes": [
+        "Equipo de Voluntarios"
+      ],
+      "lugar": "-",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "18:00",
+      "fin": "18:07",
+      "tipo": "General",
+      "titulo": "Interacción con MCs",
+      "ponentes": [
+        "Aixa y David"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "18:07",
+      "fin": "18:07",
+      "tipo": "General",
+      "titulo": "Animación de presentación",
+      "ponentes": [
+        "Mirna Espinoza"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "18:07",
+      "fin": "18:47",
+      "tipo": "General",
+      "titulo": "Plenaria 3- Otto Sánchez",
+      "ponentes": [
+        "Otto Sánchez"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "18:47",
+      "fin": "18:57",
+      "tipo": "General",
+      "titulo": "Alabanza",
+      "ponentes": [
+        "Iglesia Reforma"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "18:57",
+      "fin": "19:00",
+      "tipo": "General",
+      "titulo": "Instrucciones para mañana- cierre",
+      "ponentes": [
+        "Aixa y David"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "19:01",
+      "fin": "23:59",
+      "tipo": "General",
+      "titulo": "Fin día 1",
+      "ponentes": [
+        "-"
+      ],
+      "lugar": "-",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Taller",
+      "titulo": "Protegiendo a la familia atendiendo a mujeres sobrevivientes de violencia",
+      "ponentes": [
+        "Lesbia González"
+      ],
+      "lugar": "Defensores",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Taller",
+      "titulo": "El Arte de Amar a los Adolescentes con Límites y Comprensión",
+      "ponentes": [
+        "Sara de Ruano - ACH"
+      ],
+      "lugar": "Exploradores",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Taller",
+      "titulo": "¿Cómo comenzar un ministerio de cuidado al vulnerable desde mi iglesia?",
+      "ponentes": [
+        "Jose Salazar - Iniciativas de Alcance"
+      ],
+      "lugar": "Reflexiones",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Taller",
+      "titulo": "Entendiendo el efecto del Trauma en el Desarrollo de los Niños - Mesas redondas",
+      "ponentes": [
+        "Teresa García - Trauma Free World"
+      ],
+      "lugar": "Neón",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Taller",
+      "titulo": "Esperanza para Jóvenes en Transición: Programas de Mentoría basados en acompañamiento y relaciones",
+      "ponentes": [
+        "Kim y Jonnie Welford - Nicodemus"
+      ],
+      "lugar": "Luces 2",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Taller",
+      "titulo": "Podcast Religión Pura en vivo: Preguntas y respuestas sobre la crianza",
+      "ponentes": [
+        "David McCormick y Aixa de López"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Taller",
+      "titulo": "Herramientas prácticas para conectar a través del juego - Mesas redondas",
+      "ponentes": [
+        "Sonia Sánchez - Iniciativas de Alcance"
+      ],
+      "lugar": "Exploradores",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Taller",
+      "titulo": "La relación entre la nutrición y la sanidad del trauma - Mesas redondas",
+      "ponentes": [
+        "Jenny Euraque"
+      ],
+      "lugar": "Defensores",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Taller",
+      "titulo": "Cambiando historias: El impacto transformador del acogimiento familiar - Mesas redondas",
+      "ponentes": [
+        "Marce Torres y Hazel Cedeño - Casa Viva"
+      ],
+      "lugar": "Neón",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Taller",
+      "titulo": "Panel Interactivo: Cómo podemos servir a personas con discapacidad",
+      "ponentes": [
+        "Modera: Paola de Alvarado. Invitadas: Azaria de Pocasangre",
+        "Shelly Reeves y Vanessa Montoya"
+      ],
+      "lugar": "Reflexiones",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Taller",
+      "titulo": "Devocionales para el cuidador agotado",
+      "ponentes": [
+        "Jeanine Martínez"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Taller",
+      "titulo": "Amando a las comunidades más vulnerables desde la iglesia local",
+      "ponentes": [
+        "World Orphans"
+      ],
+      "lugar": "Luces 2",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Acompañando a jóvenes institucionalizados en su transición a vida independiente",
+      "ponentes": [
+        "Morgan Pagolu - Hope Institute"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Navegando las crisis en familias adoptivas y de acogimiento",
+      "ponentes": [
+        "Toni Steere - Houston’s First Baptist"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Una herramienta tecnológica gratuita para cambiar vidas.",
+      "ponentes": [
+        "Both Ends Believing"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Mesas de Coaching",
+      "titulo": "¿Por qué necesitamos un reglamento interno de protección infantil y por dónde empezamos?",
+      "ponentes": [
+        "Alan Andrews y Alejandra Búrbano - One More Child"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Liderazgo informado en trauma",
+      "ponentes": [
+        "Juan Porto - Back2Back"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Quiero adoptar pero no sé por dónde comenzar.",
+      "ponentes": [
+        "Sara de Ruano - ACH"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Desafíos en el trabajo con familias vulnerables",
+      "ponentes": [
+        "Claudia Luján"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Fortalecimiento comunitario",
+      "ponentes": [
+        "Claudia Marroquín - Buckner Guatemala"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Justicia que sana. Vínculos que restauran.",
+      "ponentes": [
+        "Rosalva Alvarado - Kids Alive"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Exploring the movement towards family based care",
+      "ponentes": [
+        "Felipe Aspergen - Casa Viva"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "09:00",
+      "fin": "10:00",
+      "tipo": "General",
+      "titulo": "Inscripción",
+      "ponentes": [
+        "Voluntarios"
+      ],
+      "lugar": "Lobby",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "09:30",
+      "fin": "10:00",
+      "tipo": "General",
+      "titulo": "Se abren las puertas al auditorium",
+      "ponentes": [
+        "Voluntarios"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "10:00",
+      "fin": "10:01",
+      "tipo": "General",
+      "titulo": "Bumper de Introducción",
+      "ponentes": [
+        "Mirna Espinoza"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "10:01",
+      "fin": "10:10",
+      "tipo": "General",
+      "titulo": "Bienvenida y presentación de primera plenaria",
+      "ponentes": [
+        "David y Aixa"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "10:10",
+      "fin": "10:10",
+      "tipo": "General",
+      "titulo": "Animación de presentación",
+      "ponentes": [
+        "Mirna Espinoza"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "10:10",
+      "fin": "10:35",
+      "tipo": "General",
+      "titulo": "Plenaria 4",
+      "ponentes": [
+        "Steven Morales"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "10:35",
+      "fin": "10:40",
+      "tipo": "General",
+      "titulo": "Video",
+      "ponentes": [
+        "-"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "10:40",
+      "fin": "10:40",
+      "tipo": "General",
+      "titulo": "Animación de presentación",
+      "ponentes": [
+        "Video corto"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "10:40",
+      "fin": "11:10",
+      "tipo": "General",
+      "titulo": "Plenaria 5",
+      "ponentes": [
+        "Maya Alonzo"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:10",
+      "fin": "11:15",
+      "tipo": "General",
+      "titulo": "Instrucciones para talleres",
+      "ponentes": [
+        "David y Aixa"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:15",
+      "fin": "11:30",
+      "tipo": "General",
+      "titulo": "Traslado a talleres",
+      "ponentes": [
+        "Voluntarios"
+      ],
+      "lugar": "-",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "General",
+      "titulo": "Talleres 1",
+      "ponentes": [
+        "Voluntarios"
+      ],
+      "lugar": "-",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "13:00",
+      "fin": "15:00",
+      "tipo": "General",
+      "titulo": "Almuerzo",
+      "ponentes": [
+        "Voluntarios"
+      ],
+      "lugar": "-",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "15:00",
+      "fin": "15:15",
+      "tipo": "General",
+      "titulo": "Alabanza",
+      "ponentes": [
+        "Iglesia Reforma"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "15:15",
+      "fin": "15:16",
+      "tipo": "General",
+      "titulo": "Video de ACH",
+      "ponentes": [
+        "-"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "15:16",
+      "fin": "16:00",
+      "tipo": "General",
+      "titulo": "Panel con Ronal, Lis, Rosalva y Pastor Ricky",
+      "ponentes": [
+        "Ronald",
+        "Lis",
+        "Rosalva y Pastor Ricky- Aixa modera"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:00",
+      "fin": "16:15",
+      "tipo": "General",
+      "titulo": "Traslado a talleres",
+      "ponentes": [
+        "Equipo de Voluntarios"
+      ],
+      "lugar": "-",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "General",
+      "titulo": "Talleres 2",
+      "ponentes": [
+        "Equipo de Voluntarios"
+      ],
+      "lugar": "-",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "17:45",
+      "fin": "18:00",
+      "tipo": "General",
+      "titulo": "Traslado al salón principal",
+      "ponentes": [
+        "Equipo de Voluntarios"
+      ],
+      "lugar": "-",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "18:00",
+      "fin": "18:10",
+      "tipo": "General",
+      "titulo": "Alabanza",
+      "ponentes": [
+        "Aixa y David"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "18:10",
+      "fin": "18:22",
+      "tipo": "General",
+      "titulo": "Interacción con MCs",
+      "ponentes": [
+        "Aixa y David"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "18:22",
+      "fin": "18:22",
+      "tipo": "General",
+      "titulo": "Animación de presentación",
+      "ponentes": [
+        "Mirna Espinoza"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "18:22",
+      "fin": "18:52",
+      "tipo": "General",
+      "titulo": "Plenaria 6",
+      "ponentes": [
+        "Claudio Fuentes"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "18:52",
+      "fin": "18:57",
+      "tipo": "General",
+      "titulo": "Alabanza",
+      "ponentes": [
+        "Grupo de Iglesia Reforma"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "18:57",
+      "fin": "19:00",
+      "tipo": "General",
+      "titulo": "Palabras finales",
+      "ponentes": [
+        "David y Aixa"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Taller",
+      "titulo": "El poder de La oración en el cuidado del huérfano (Mesas Redondas)",
+      "ponentes": [
+        "Toni Steere - Houston’s First Baptist"
+      ],
+      "lugar": "Defensores",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Taller",
+      "titulo": "Pausa y Piensa: Diciendo la Verdad en la Adopción (Mesas Redondas)",
+      "ponentes": [
+        "Jackie Darby con Yesenia",
+        "Camila y Mónica"
+      ],
+      "lugar": "Neón",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Taller",
+      "titulo": "Cuestión de Decisión: Los para qué y los cómo de la reunificación y reintegración familiar. ",
+      "ponentes": [
+        "Andrés Villalobos - Casa Viva"
+      ],
+      "lugar": "Luces 2",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Taller",
+      "titulo": "La Otra Cara del Dolor: Historias difíciles y redención completa",
+      "ponentes": [
+        "Maya Alonzo"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Taller",
+      "titulo": "Recaudación de fondos y formación de alianzas estratégicas (Mesas Redondas)",
+      "ponentes": [
+        "Antonio García - Back2Back"
+      ],
+      "lugar": "Exploradores",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Taller",
+      "titulo": "La trata de personas: más de lo que piensas",
+      "ponentes": [
+        "Claudia Luján"
+      ],
+      "lugar": "Reflexiones",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Taller",
+      "titulo": "Moving toward family-based care (taller en inglés)",
+      "ponentes": [
+        "Felipe Aspergen - Casa Viva"
+      ],
+      "lugar": "Reflexiones",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Taller",
+      "titulo": "¿Por qué necesitamos un reglamento interno de protección infantil y por dónde empezamos?",
+      "ponentes": [
+        "Alan Andrews y Alejandra Búrbano - One More Child"
+      ],
+      "lugar": "Luces 2",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Taller",
+      "titulo": "Justicia que sana. Vínculos que restauran.",
+      "ponentes": [
+        "Susana Escobedo - Kids Alive"
+      ],
+      "lugar": "Luminaria",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Taller",
+      "titulo": "Las secuelas del trauma en los ambientes educativos",
+      "ponentes": [
+        "Raquel Nájera - Iniciativas de Alcance"
+      ],
+      "lugar": "Exploradores",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Taller",
+      "titulo": "Entendiendo el efecto del Trauma en el Desarrollo de los Niños",
+      "ponentes": [
+        "Teresa García - Trauma Free World"
+      ],
+      "lugar": "Neón",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Taller",
+      "titulo": "Navegando las ideología de género con sabiduría y verdad",
+      "ponentes": [
+        "Mirna Espinoza - ACH"
+      ],
+      "lugar": "Defensores",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Acompañando a jóvenes institucionalizados en su transición a vida independiente",
+      "ponentes": [
+        "Morgan Pagolu - Hope Institute"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Cuidado pastoral para líderes cansados",
+      "ponentes": [
+        "Claudio Fuentes - Iglesia Unión Cristiana"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Una herramienta tecnológica gratuita para cambiar vidas.",
+      "ponentes": [
+        "Both Ends Believing"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Mesas de Coaching",
+      "titulo": "¿Por qué necesitamos un reglamento interno de protección infantil y por dónde empezamos?",
+      "ponentes": [
+        "Alan Andrews y Alejandra Búrbano - One More Child"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "11:30",
+      "fin": "13:00",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Cross-Cultural Partnerships: Facilitating Gospel-Centered Local ",
+      "ponentes": [
+        "Jonnie Welford - Nicodemus"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Quiero ser mentor pero no sé por dónde comenzar",
+      "ponentes": [
+        "Azaria de Pocasangre - Iniciativas de Alcance"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Desafíos y soluciones en la formación de alianzas y recaudación de fondos desde ONGs",
+      "ponentes": [
+        "Antonio García - Back2Back"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Caminando en la verdad como familias adoptivas",
+      "ponentes": [
+        "Jackie Darby"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Justicia que sana. Vínculos que restauran.",
+      "ponentes": [
+        "Rosalva Alvarado - Kids Alive"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    },
+    {
+      "fecha": "2025-08-18",
+      "inicio": "16:15",
+      "fin": "17:45",
+      "tipo": "Mesas de Coaching",
+      "titulo": "Devocionales para el cuidador agotado",
+      "ponentes": [
+        "Jeanine Martínez"
+      ],
+      "lugar": "Cafetería",
+      "grabacion": false
+    }
+  ]
+}
