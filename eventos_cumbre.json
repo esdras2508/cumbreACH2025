@@ -1,7 +1,7 @@
 {
   "eventos": [
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "09:00",
       "fin": "10:00",
       "tipo": "General",
@@ -13,7 +13,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "09:30",
       "fin": "10:00",
       "tipo": "General",
@@ -25,7 +25,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "10:00",
       "fin": "10:01",
       "tipo": "General",
@@ -37,7 +37,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "10:01",
       "fin": "10:10",
       "tipo": "General",
@@ -49,7 +49,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "10:10",
       "fin": "10:10",
       "tipo": "General",
@@ -61,7 +61,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "10:10",
       "fin": "10:40",
       "tipo": "General",
@@ -73,7 +73,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "10:40",
       "fin": "10:45",
       "tipo": "General",
@@ -85,7 +85,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "10:45",
       "fin": "10:45",
       "tipo": "General",
@@ -97,7 +97,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "10:45",
       "fin": "11:10",
       "tipo": "General",
@@ -109,7 +109,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "11:10",
       "fin": "11:15",
       "tipo": "General",
@@ -121,7 +121,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "11:15",
       "fin": "11:30",
       "tipo": "General",
@@ -133,7 +133,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "General",
@@ -145,7 +145,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "13:00",
       "fin": "15:00",
       "tipo": "General",
@@ -157,7 +157,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "15:00",
       "fin": "15:15",
       "tipo": "General",
@@ -169,7 +169,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "15:15",
       "fin": "15:16",
       "tipo": "General",
@@ -181,7 +181,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "15:16",
       "fin": "16:00",
       "tipo": "General",
@@ -193,7 +193,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "16:00",
       "fin": "16:15",
       "tipo": "General",
@@ -205,7 +205,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "General",
@@ -217,7 +217,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "17:45",
       "fin": "18:00",
       "tipo": "General",
@@ -229,7 +229,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "18:00",
       "fin": "18:07",
       "tipo": "General",
@@ -241,7 +241,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "18:07",
       "fin": "18:07",
       "tipo": "General",
@@ -253,7 +253,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "18:07",
       "fin": "18:47",
       "tipo": "General",
@@ -265,7 +265,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "18:47",
       "fin": "18:57",
       "tipo": "General",
@@ -277,7 +277,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "18:57",
       "fin": "19:00",
       "tipo": "General",
@@ -289,7 +289,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "19:01",
       "fin": "23:59",
       "tipo": "General",
@@ -301,7 +301,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Taller",
@@ -313,7 +313,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Taller",
@@ -325,7 +325,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Taller",
@@ -337,7 +337,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Taller",
@@ -349,7 +349,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Taller",
@@ -361,7 +361,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Taller",
@@ -373,7 +373,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Taller",
@@ -385,7 +385,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Taller",
@@ -397,7 +397,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Taller",
@@ -409,7 +409,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Taller",
@@ -422,7 +422,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Taller",
@@ -434,7 +434,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Taller",
@@ -446,7 +446,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Mesas de Coaching",
@@ -458,7 +458,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Mesas de Coaching",
@@ -470,7 +470,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Mesas de Coaching",
@@ -482,7 +482,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Mesas de Coaching",
@@ -494,7 +494,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Mesas de Coaching",
@@ -506,7 +506,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Mesas de Coaching",
@@ -518,7 +518,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Mesas de Coaching",
@@ -530,7 +530,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Mesas de Coaching",
@@ -542,7 +542,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Mesas de Coaching",
@@ -554,7 +554,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-21",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Mesas de Coaching",
@@ -566,7 +566,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "09:00",
       "fin": "10:00",
       "tipo": "General",
@@ -578,7 +578,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "09:30",
       "fin": "10:00",
       "tipo": "General",
@@ -590,7 +590,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "10:00",
       "fin": "10:01",
       "tipo": "General",
@@ -602,7 +602,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "10:01",
       "fin": "10:10",
       "tipo": "General",
@@ -614,7 +614,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "10:10",
       "fin": "10:10",
       "tipo": "General",
@@ -626,7 +626,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "10:10",
       "fin": "10:35",
       "tipo": "General",
@@ -638,7 +638,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "10:35",
       "fin": "10:40",
       "tipo": "General",
@@ -650,7 +650,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "10:40",
       "fin": "10:40",
       "tipo": "General",
@@ -662,7 +662,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "10:40",
       "fin": "11:10",
       "tipo": "General",
@@ -674,7 +674,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "11:10",
       "fin": "11:15",
       "tipo": "General",
@@ -686,7 +686,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "11:15",
       "fin": "11:30",
       "tipo": "General",
@@ -698,7 +698,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "General",
@@ -710,7 +710,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "13:00",
       "fin": "15:00",
       "tipo": "General",
@@ -722,7 +722,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "15:00",
       "fin": "15:15",
       "tipo": "General",
@@ -734,7 +734,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "15:15",
       "fin": "15:16",
       "tipo": "General",
@@ -746,7 +746,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "15:16",
       "fin": "16:00",
       "tipo": "General",
@@ -760,7 +760,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "16:00",
       "fin": "16:15",
       "tipo": "General",
@@ -772,7 +772,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "General",
@@ -784,7 +784,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "17:45",
       "fin": "18:00",
       "tipo": "General",
@@ -796,7 +796,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "18:00",
       "fin": "18:10",
       "tipo": "General",
@@ -808,7 +808,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "18:10",
       "fin": "18:22",
       "tipo": "General",
@@ -820,7 +820,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "18:22",
       "fin": "18:22",
       "tipo": "General",
@@ -832,7 +832,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "18:22",
       "fin": "18:52",
       "tipo": "General",
@@ -844,7 +844,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "18:52",
       "fin": "18:57",
       "tipo": "General",
@@ -856,7 +856,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "18:57",
       "fin": "19:00",
       "tipo": "General",
@@ -868,7 +868,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Taller",
@@ -880,7 +880,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Taller",
@@ -893,7 +893,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Taller",
@@ -905,7 +905,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Taller",
@@ -917,7 +917,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Taller",
@@ -929,7 +929,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Taller",
@@ -941,7 +941,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Taller",
@@ -953,7 +953,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Taller",
@@ -965,7 +965,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Taller",
@@ -977,7 +977,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Taller",
@@ -989,7 +989,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Taller",
@@ -1001,7 +1001,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Taller",
@@ -1013,7 +1013,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Mesas de Coaching",
@@ -1025,7 +1025,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Mesas de Coaching",
@@ -1037,7 +1037,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Mesas de Coaching",
@@ -1049,7 +1049,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Mesas de Coaching",
@@ -1061,7 +1061,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "11:30",
       "fin": "13:00",
       "tipo": "Mesas de Coaching",
@@ -1073,7 +1073,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Mesas de Coaching",
@@ -1085,7 +1085,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Mesas de Coaching",
@@ -1097,7 +1097,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Mesas de Coaching",
@@ -1109,7 +1109,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Mesas de Coaching",
@@ -1121,7 +1121,7 @@
       "grabacion": false
     },
     {
-      "fecha": "2025-08-19",
+      "fecha": "2025-08-22",
       "inicio": "16:15",
       "fin": "17:45",
       "tipo": "Mesas de Coaching",
